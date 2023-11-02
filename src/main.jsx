@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
+import ClassCounter, {  } from "./components/ClassCounter";
 
 // Exported Components
 import  { User  }  from "./components/User";
@@ -9,13 +10,14 @@ import { FormLogIn } from "./components/FormLogIn";
 
 const App = () => {
   
-  const [session, changeSessionState] = useState(false);
+  const [session, changeSessionState] = useState(true);
 
   return (
     <>
     {session === true ?
       <>
         <User /> 
+        <ClassCounter increaseQuantity={100} decreaseQuantity={20} />
         <button onClick={() => changeSessionState(false)}>Log Out</button>
       </>
     : 

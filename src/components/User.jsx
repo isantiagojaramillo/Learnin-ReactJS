@@ -2,7 +2,7 @@ import React from 'react';
 import { Title } from "./Title";
 
 const country = null;
-const friends = ['Alejo', 'Santi', 'El lindo'];
+const friends = ['El hermoso', 'Santi', 'El lindo'];
 
 // COMPONENT
 export const User = () => {
