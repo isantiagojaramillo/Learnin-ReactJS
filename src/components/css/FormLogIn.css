@@ -1,0 +1,47 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.label {
+    font-weight: bold;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+ 
+.input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #d1d1d1;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.boxButton{
+    display: flex;
+    justify-content: center;
+}
+ 
+.button {
+    background: #83d394;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 3px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+ 
+.button:hover {
+    background: #44a559;
+    color: #fff;
+}
