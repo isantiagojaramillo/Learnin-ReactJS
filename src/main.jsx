@@ -11,15 +11,15 @@ import { FormLogIn } from "./components/FormLogIn";
 
 const App = () => {
   
-  const [session, changeSessionState] = useState(true);
+  const [session, changeSessionState] = useState(false);
 
   return (
     <>
     {session === true ?
       <>
         <User /> 
-        <FunctionalCounter increaseQuantity={100} decreaseQuantity={20} />
-        {/* <ClassCounter increaseQuantity={100} decreaseQuantity={20} /> */}
+        {/* <FunctionalCounter increaseQuantity={100} decreaseQuantity={20} /> */}
+        <ClassCounter increaseQuantity={100} decreaseQuantity={20} />
         <button onClick={() => changeSessionState(false)}>Log Out</button>
       </>
     : 
