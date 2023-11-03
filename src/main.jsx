@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom/client';
 import { FunctionalCounter } from "./components/FunctionalCounter";
 import "./css/main.css";
 import  Button  from "./elements/Button";
+import { ExampleUseReducer } from './components/ExampleUseReducer';
 
 
 // Exported Components
@@ -14,14 +15,15 @@ import { FormLogIn } from "./components/FormLogIn";
 
 const App = () => {
   
-  const [session, changeSessionState] = useState(false);
+  const [session, changeSessionState] = useState(true);
 
   return (
     <section className='container'>
     {session === true ?
       <>
         <User /> 
-        <FunctionalCounter increaseQuantity={100} decreaseQuantity={20} />
+        <ExampleUseReducer />
+        {/* <FunctionalCounter increaseQuantity={100} decreaseQuantity={20} /> */}
         {/* <button onClick={() => changeSessionState(false)}>Log Out</button> */}
         <Button longButton marginTop onClick={() => changeSessionState(false)}>Log out</Button>
       </>
