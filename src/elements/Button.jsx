@@ -25,7 +25,7 @@ const Button = styled.button`
     `}
 
     ${props => props.marginTop && css `margin-top: 10px`}
-    ${props => props.marginRight && css `margin-right: 10px`}
+    ${props => props.marginRight && css `margin-right: 5px`}
 
 
 `;

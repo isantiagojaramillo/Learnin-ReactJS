@@ -43,7 +43,7 @@ export const FunctionalCounter = (props) => {
         {/* <button className={styles.button} onClick={() => increase(props.increaseQuantity)}>Increment</button>
         <button className={styles.button} onClick={() => decrease(props.decreaseQuantity)}>Decrease</button> */}
         <Button black marginRight onClick={() => increase(props.increaseQuantity)}>Increase</Button>
-        <Button black onClick={() => decrease(props.decreaseQuantity)}>Decrease</Button>
+        <Button black marginRight onClick={() => decrease(props.decreaseQuantity)}>Decrease</Button>
     </>
   )
 }

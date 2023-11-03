@@ -6,6 +6,7 @@ import { FunctionalCounter } from "./components/FunctionalCounter";
 import "./css/main.css";
 import  Button  from "./elements/Button";
 import { ExampleUseReducer } from './components/ExampleUseReducer';
+import { Blog } from './components/Blog';
 
 
 // Exported Components
@@ -22,6 +23,7 @@ const App = () => {
     {session === true ?
       <>
         <User /> 
+        <Blog />
         <ExampleUseReducer />
         {/* <FunctionalCounter increaseQuantity={100} decreaseQuantity={20} /> */}
         {/* <button onClick={() => changeSessionState(false)}>Log Out</button> */}
