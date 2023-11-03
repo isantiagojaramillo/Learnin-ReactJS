@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import styles from "../css/FunctionalCounter.module.css";
+// import styles from "../css/FunctionalCounter.module.css";
 import Button from "../elements/Button";
 
 export const FunctionalCounter = (props) => {
@@ -13,8 +13,8 @@ export const FunctionalCounter = (props) => {
         <h1>Counter: {account} </h1>
         {/* <button className={styles.button} onClick={() => increase(props.increaseQuantity)}>Increment</button>
         <button className={styles.button} onClick={() => decrease(props.decreaseQuantity)}>Decrease</button> */}
-        <Button onClick={() => increase(props.increaseQuantity)}>Increase</Button>
-        <Button onClick={() => decrease(props.decreaseQuantity)}>Decrease</Button>
+        <Button black marginRight onClick={() => increase(props.increaseQuantity)}>Increase</Button>
+        <Button black onClick={() => decrease(props.decreaseQuantity)}>Decrease</Button>
     </>
   )
 }

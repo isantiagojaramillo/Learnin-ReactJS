@@ -58,9 +58,9 @@ export const FormLogIn = (props) => {
                 onChange={onGlobalChange}
                 className={styles.input}
             />
-            <div className={styles.boxButton}>
+            <div>
                 {/* <button type='submit' className={styles.button}>Log in</button> */}
-                <Button type='submit'>Log In</Button>
+                <Button long type='submit'>Log In</Button>
             </div>
         </div>
     </form>

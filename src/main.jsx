@@ -23,7 +23,7 @@ const App = () => {
         <User /> 
         <FunctionalCounter increaseQuantity={100} decreaseQuantity={20} />
         {/* <button onClick={() => changeSessionState(false)}>Log Out</button> */}
-        <Button onClick={() => changeSessionState(false)}>Log out</Button>
+        <Button long marginTop onClick={() => changeSessionState(false)}>Log out</Button>
       </>
     : 
       <>

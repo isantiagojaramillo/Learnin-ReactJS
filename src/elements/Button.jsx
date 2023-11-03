@@ -1,9 +1,10 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 const Button = styled.button`
     background: #83d394;
     padding: 20px;
-    width: 100%;
+    // margin: 10px;
+    // width: 100%;
     border: none;
     border-radius: 3px;
     font-weight: bold;
@@ -11,10 +12,22 @@ const Button = styled.button`
     cursor: pointer;
     transition: .3s ease all;
 
+    width: ${props => props.long ? '100%' : 'auto'};
+
     &:hover{
         background: #44a559;
         color: #fff;
     }
+
+    ${props => props.black && css `
+        background: #000;
+        color: #fff;
+    `}
+
+    ${props => props.marginTop && css `margin-top: 10px`}
+    ${props => props.marginRight && css `margin-right: 10px`}
+
+
 `;
 
 export default Button;
