@@ -12,7 +12,7 @@ const Button = styled.button`
     cursor: pointer;
     transition: .3s ease all;
 
-    width: ${props => props.long ? '100%' : 'auto'};
+    width: ${props => props.longButton ? '100%' : 'auto'};
 
     &:hover{
         background: #44a559;

@@ -60,7 +60,7 @@ export const FormLogIn = (props) => {
             />
             <div>
                 {/* <button type='submit' className={styles.button}>Log in</button> */}
-                <Button long type='submit'>Log In</Button>
+                <Button longButton type='submit'>Log In</Button>
             </div>
         </div>
     </form>
