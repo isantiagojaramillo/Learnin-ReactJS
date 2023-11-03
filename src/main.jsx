@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 // import ClassCounter, {  } from "./components/ClassCounter";
 import { FunctionalCounter } from "./components/FunctionalCounter";
-import "./components/css/main.css";
+import styles from "./components/css/main.module.css";
 
 
 // Exported Components
@@ -16,7 +16,7 @@ const App = () => {
   const [session, changeSessionState] = useState(true);
 
   return (
-    <section className='container'>
+    <section className={styles.container}>
     {session === true ?
       <>
         <User /> 

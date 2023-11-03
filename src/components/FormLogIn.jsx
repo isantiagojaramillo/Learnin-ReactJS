@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import "./css/FormLogIn.css";
+import styles from "./css/FormLogIn.module.css";
 
 export const FormLogIn = (props) => {
     const [user, changeUser] = useState('');
@@ -34,31 +34,31 @@ export const FormLogIn = (props) => {
     }
 
   return (
-    <form action="" onSubmit={onSubmit} className='form'>
+    <form action="" onSubmit={onSubmit} className={styles.form} >
         <h1>You havent logged in</h1>
         <div>
-            <label htmlFor="user" className='label'>User</label>
+            <label htmlFor="user" className={styles.label}>User</label>
             <input 
                 type="text"  
                 name='user' 
                 id='user'
                 value={user}
                 onChange={onGlobalChange}
-                className='input'
+                className={styles.input}
             />
         </div>
         <div>
-            <label htmlFor="password" className='label'>Password</label>
+            <label htmlFor="password" className={styles.label}>Password</label>
             <input 
                 type="password"  
                 name='password' 
                 id='password'
                 value={password}
                 onChange={onGlobalChange}
-                className='input'
+                className={styles.input}
             />
-            <div className='boxButton'>
-                <button type='submit' className='button'>Log in</button>
+            <div className={styles.boxButton}>
+                <button type='submit' className={styles.button}>Log in</button>
             </div>
         </div>
     </form>
