@@ -1,5 +1,6 @@
 import React from 'react';
 import { Title } from "./Title";
+import styled from 'styled-components';
 
 const country = null;
 const friends = ['El hermoso', 'Santi', 'El lindo'];
@@ -11,7 +12,7 @@ export const User = () => {
         <Title user = "Sara" color="red" />
         <Title user = "Santiago" color="gray" />
         <Title />
-        <p>Have a nice day!</p>
+        <Paragraph>Have a nice day!</Paragraph>
         {country && <p>you're from: {country}</p>}
         <ul>
           {friends.map((friend, id) => <li key={id}>{friend}</li> )}
@@ -19,3 +20,8 @@ export const User = () => {
       </>
   )
 }
+
+const Paragraph = styled.p`
+  margin-bottom: 10px;
+
+`;

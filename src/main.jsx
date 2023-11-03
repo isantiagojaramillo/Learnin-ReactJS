@@ -3,7 +3,8 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 // import ClassCounter, {  } from "./components/ClassCounter";
 import { FunctionalCounter } from "./components/FunctionalCounter";
-import styles from "./components/css/main.module.css";
+import "./css/main.css";
+import  Button  from "./elements/Button";
 
 
 // Exported Components
@@ -13,16 +14,16 @@ import { FormLogIn } from "./components/FormLogIn";
 
 const App = () => {
   
-  const [session, changeSessionState] = useState(true);
+  const [session, changeSessionState] = useState(false);
 
   return (
-    <section className={styles.container}>
+    <section className='container'>
     {session === true ?
       <>
         <User /> 
         <FunctionalCounter increaseQuantity={100} decreaseQuantity={20} />
-        {/* <ClassCounter increaseQuantity={100} decreaseQuantity={20} /> */}
-        <button onClick={() => changeSessionState(false)}>Log Out</button>
+        {/* <button onClick={() => changeSessionState(false)}>Log Out</button> */}
+        <Button onClick={() => changeSessionState(false)}>Log out</Button>
       </>
     : 
       <>

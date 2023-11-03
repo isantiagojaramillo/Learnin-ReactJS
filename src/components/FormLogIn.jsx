@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import styles from "./css/FormLogIn.module.css";
+import styles from "../css/FormLogIn.module.css";
+import Button from "../elements/Button";
 
 export const FormLogIn = (props) => {
     const [user, changeUser] = useState('');
@@ -58,7 +59,8 @@ export const FormLogIn = (props) => {
                 className={styles.input}
             />
             <div className={styles.boxButton}>
-                <button type='submit' className={styles.button}>Log in</button>
+                {/* <button type='submit' className={styles.button}>Log in</button> */}
+                <Button type='submit'>Log In</Button>
             </div>
         </div>
     </form>
